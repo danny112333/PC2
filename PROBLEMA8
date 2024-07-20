@@ -1,0 +1,9 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+def problem_8(n):
+    return factorial(n)
+print("Problem 8:", problem_8(5))  # Example: 5! = 120
