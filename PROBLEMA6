@@ -1,0 +1,8 @@
+def problem_6():
+    fib_series = []
+    a, b = 0, 1
+    while a <= 50:
+        fib_series.append(a)
+        a, b = b, a + b
+    return fib_series
+print("Problem 6:", problem_6())
