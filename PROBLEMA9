@@ -1,0 +1,10 @@
+def eliminar_repetidas(frase):
+    resultado = []
+    for i, letra in enumerate(frase):
+        if i == 0 or letra != frase[i - 1]:
+            resultado.append(letra)
+    return ''.join(resultado)
+
+# Ejemplo de uso
+frase = "Twitter"
+print(eliminar_repetidas(frase))  # Output: "Twiter"
