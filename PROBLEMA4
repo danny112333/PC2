@@ -1,0 +1,23 @@
+def problem_4():
+    students = []
+    while True:
+        student_name = input("Ingrese el nombre del alumno: ")
+        grades = []
+        for i in range(3):
+            grade = int(input(f"Ingrese la calificación {i+1}: "))
+            grades.append(grade)
+        student = {
+            "Alumno": student_name,
+            "Notas": grades
+        }
+        students.append(student)
+        another = input("¿Desea ingresar otro alumno? (SI/NO): ").strip().upper()
+        if another == "NO":
+            break
+    
+    print("Listado completo de alumnos:")
+    for student in students:
+        print(f"Alumno: {student['Alumno']}, Notas: {student['Notas']}")
+
+print("Problem 4:")
+problem_4()
