@@ -1,0 +1,18 @@
+def problem_3():
+    numbers = []
+    while True:
+        user_input = input("¿Desea ingresar un número? (SI/NO): ").strip().upper()
+        if user_input == "NO":
+            break
+        if user_input == "SI":
+            number = int(input("Ingrese el número: "))
+            numbers.append(number)
+    
+    even_count = len([num for num in numbers if num % 2 == 0])
+    odd_count = len([num for num in numbers if num % 2 != 0])
+    
+    print("Números ingresados:", numbers)
+    print("Cantidad de números pares:", even_count)
+    print("Cantidad de números impares:", odd_count)
+print("Problem 3:")
+problem_3()
